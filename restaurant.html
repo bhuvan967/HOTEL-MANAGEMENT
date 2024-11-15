@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Delicious Eats</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Delicious Eats</h2>
+            <p>Experience the best food in town</p>
+            <label id="menu-btn"><a href="menu.html" style="color: black;">Menu</a></label>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+   
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+            <img src="pic1.jpg" alt="1st side">
+            <img src="pic2.jpg" alt="2nd side">
+            <img src="pic3.jpg" alt="3rd side">
+            <img src="pic4.jpg" alt="4th side">
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <h2>Make a Reservation</h2>
+        <form class="reservation-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Guests</label>
+            <input type="number" id="guests" name="guests" required min="1" max="10">
+
+            <button type="submit"><a href="submit.html" style="color: white;text-decoration: none;">Reserve Now</a></button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Delicious Eats. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
